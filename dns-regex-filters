@@ -1,0 +1,30 @@
+[Adblock Plus]
+! Title: Stryker's Regex Filters
+! Description: General regex rules to block tracking, ads, telemetry, and suspect tlds.
+! Homepage: https://github.com/Strykerx1/DNS-Blocklists
+! License: https://github.com/Strykerx1/DNS-Blocklists/blob/main/LICENSE
+! Last modified: 02 Apr 2024 22:30 UTC
+! Version: 2024.04.04
+! Syntax: AdBlock
+! Number of entries: 20
+!
+/(^|\.)ru$/
+/(^|\.)su$/
+/(^|\.)рф$/
+/(^|\.)xn--p1ai$/
+/^ad([sxv]?[0-9]*|system)[_.-]([^.[:space:]]+\.){1,}|[_.-]ad([sxv]?[0-9]*|system)[_.-]/
+/^(.+[_.-])?adse?rv(er?|ice)?s?[0-9]*[_.-]/
+/^(.+[_.-])?telemetry[_.-]/
+/^adim(age|g)s?[0-9]*[_.-]/
+/^adtrack(er|ing)?[0-9]*[_.-]/
+/^advert(s|is(ing|ements?))?[0-9]*[_.-]/
+/^aff(iliat(es?|ion))?[_.-]/
+/^analytics?[_.-]/
+/^banners?[_.-]/
+/^beacons?[0-9]*[_.-]/
+/^count(ers?)?[0-9]*[_.-]/
+/^mads\./
+/^pixels?[-.]/
+/^stat(s|istics)?[0-9]*[_.-]/
+/^(.+[_.-])?klarna(cdn)?[0-9]*[_.-]/
+/^(.+[_.-])?wpad?[0-9]*[_.-]/
